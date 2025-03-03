@@ -1,16 +1,15 @@
 import { Input } from "../../components/Input";
 import { Table } from "../../components/Table";
 import { useFilteredTests } from "./hooks/useFilteredTests";
-import { FullTest } from "../../types";
-
 import styles from "./Dashboard.module.css";
+import { useTests } from "../../context/TestsContext";
+import { Loading } from "../../components/Loading";
 
-interface DashboardProps {
-  tests: FullTest[];
-}
-
-export const Dashboard = ({ tests }: DashboardProps) => {
+export const Dashboard = () => {
+  const { tests, loading } = useTests();
   const { filteredTests, count } = useFilteredTests(tests);
+
+  if (loading) return <Loading />;
 
   return (
     <div className={styles.container}>

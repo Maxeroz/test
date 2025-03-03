@@ -1,9 +1,10 @@
 import styles from "./Header.module.css";
 
 import { useCurrentTest } from "./hooks/useCurrentTest";
-import { FullTest } from "../../types";
+import { useTests } from "../../context/TestsContext";
 
-export const Header = ({ tests }: { tests: FullTest[] }) => {
+export const Header = () => {
+  const { tests } = useTests();
   const { description, formattedPathname } = useCurrentTest(tests);
 
   return (

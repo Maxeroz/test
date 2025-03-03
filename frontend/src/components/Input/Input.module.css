@@ -1,3 +1,6 @@
+/* TODO: все цвета вынести в переменные и использовать от туда */
+/* создай /src/styles/variables.css - туда вноси все переменные - адаптив и так далее, и используем их */
+
 .inputContainer {
   display: flex;
   align-items: center;

@@ -8,7 +8,7 @@ type TableHeaderProps = {
   toggleSort: (key: keyof FullTest) => void;
   sortConfig: { key: keyof FullTest; ascending: boolean } | null;
 };
-
+// TODO: нет индексации файла
 export const TableHeader = ({
   columnProportions,
   toggleSort,

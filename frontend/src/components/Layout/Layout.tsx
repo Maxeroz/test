@@ -1,6 +1,12 @@
-import { ReactNode } from "react";
+import { Outlet } from "react-router-dom";
 import styles from "./Layout.module.css";
+import { Header } from "../Header";
 
-export const Layout = ({ children }: { children: ReactNode }) => {
-  return <div className={styles.container}>{children}</div>;
+export const Layout = () => {
+  return (
+    <div className={styles.container}>
+      <Header />
+      <Outlet />
+    </div>
+  );
 };

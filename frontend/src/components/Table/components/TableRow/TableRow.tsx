@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { TableRowProps } from "./types";
 import { getStatusClass } from "./utils";
 import { useRandomColor } from "./hooks/useRandomColor";
+//TODO: В мемо оберни все используемые в компоненте данные, и сам компонент
 
 export const TableRow = ({
   id,
