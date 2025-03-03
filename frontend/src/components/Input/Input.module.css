@@ -1,0 +1,60 @@
+.inputContainer {
+  display: flex;
+  align-items: center;
+  padding: 15px 13px;
+  gap: 11px;
+  height: 45px;
+  border-radius: 15px;
+  border: 1px solid #ebebeb;
+}
+
+.mainInput {
+  flex: 1;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.mainInput::placeholder {
+  color: #d1d1d1;
+  opacity: 1;
+}
+
+.inputAdornment {
+  color: #d1d1d1;
+}
+
+.noResults {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  text-align: center;
+}
+
+.noResults p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.noResults button {
+  margin-top: 10px;
+  padding: 9px 30px;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #2ee5ac;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.noResults button:hover {
+  background-color: #2ee5ac;
+}

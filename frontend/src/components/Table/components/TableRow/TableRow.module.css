@@ -1,0 +1,88 @@
+.rowWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.23px;
+  height: 70px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.rowWrapper:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f7f7f7;
+}
+
+.rowWrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: var(--random-color);
+  border-radius: 3px 0 0 3px;
+}
+
+.td {
+  font-family: "Roboto";
+  flex: 1;
+  padding: 15px;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.type,
+.site {
+  font-size: 12px;
+  line-height: 14.06px;
+  font-weight: 400;
+  color: #5c5c5c;
+}
+
+.button {
+  padding: 8px 27px;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.results {
+  background-color: #2ee5ac;
+  color: #fff;
+}
+
+.resultsCell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.finalize {
+  background-color: #7d7d7d;
+  color: #fff;
+}
+
+.statusOnline {
+  color: #1bda9d;
+}
+
+.statusPaused {
+  color: #ff8346;
+}
+
+.statusDraft {
+  color: #5c5c5c;
+}
+
+.statusStopped {
+  color: #fe4848;
+}

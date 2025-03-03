@@ -1,0 +1,16 @@
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  position: absolute;
+  bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.55px;
+  background-color: transparent;
+  color: #222222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
